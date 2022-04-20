@@ -175,6 +175,7 @@ align-content: stretch;
  background-color: rgba(9,121,66,0.61);
  padding: 0 5px 0 5px;
  width: 100%;
+ border-top: 1px solid var(--primary-color);
  border-bottom: 1px solid var(--primary-color);
  display: flex;
 flex-direction: column;

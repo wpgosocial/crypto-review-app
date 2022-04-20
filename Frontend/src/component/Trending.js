@@ -12,14 +12,14 @@ const Trending = () => {
   return (
     <>
       <CoinHeader>
-        <div>#Trend</div>Assset  <Div>{" "}#Rank</Div><Div>Price BTC</Div>
+        <div>#Trend</div> <Div>Assset</Div>  <Div>#Rank</Div><Div>Price BTC</Div>
       </CoinHeader>
       {/* <HrHead /> */}
       {coinTrending.map((theCoinsObject) => {
         return (
           <div key={theCoinsObject.item.coin_id} >
             <CoinLayout>
-              <DivTrendNum><CoinImg src={theCoinsObject.item.small}/>{theCoinsObject.item.score + 1}</DivTrendNum>    {theCoinsObject.item.name}{" - "}{theCoinsObject.item.symbol.toUpperCase()}    <Div> <DivName>{theCoinsObject.item.market_cap_rank} </DivName></Div> <Div><BsCurrencyBitcoin />{theCoinsObject.item.price_btc.toFixed(9)} </Div>
+              <DivTrendNum><CoinImg src={theCoinsObject.item.small}/>{theCoinsObject.item.score + 1}</DivTrendNum>   <Div> {theCoinsObject.item.name}{" - "}{theCoinsObject.item.symbol.toUpperCase()} </Div>  <Div> {theCoinsObject.item.market_cap_rank} </Div> <Div><BsCurrencyBitcoin />{theCoinsObject.item.price_btc.toFixed(9)} </Div>
             </CoinLayout>
             <Hr />
           </div>)
