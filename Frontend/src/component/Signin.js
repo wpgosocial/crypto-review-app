@@ -25,11 +25,13 @@ const Signin = () => {
       .then(res => res.json())
       .then((data) => {
         setIsAmember(data.data)
-        navigate(`/profile/${isAmember._id}`)
+        navigate(`/Trending`)
+        // navigate(`/profile/${isAmember._id}`)
+
       })
       .catch((err) => { console.log(err) })
   }
-  console.log("The isAmember is ................ :", isAmember);
+  // console.log("The isAmember is ................ :", isAmember);
   return (
     <>
       <Wrapper>

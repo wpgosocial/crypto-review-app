@@ -26,7 +26,7 @@ const coinSearchHandle = (e) => {
 }
 
 
-console.log("TTTTTTTTTTTTTTTTTTT",onCoinList2)
+console.log("TTTTTTTTTTTTTTTTTTT",onCoinList1)
 
 
 onCoinList2.sort(((a, b)=>{return parseInt(a["1d"].price_change_pct)-parseInt(b["1d"].price_change_pct)})).reverse();
@@ -88,7 +88,7 @@ const selectCoin = onCoinList1.filter(onCoinList1 => onCoinList1.name.toUpperCas
             <>
             <div key={Math.floor(Math.random() * 300000000000)}>
               <CoinLayout onClick={(ev) => handleCoinDetails(ev, theCoins.id)}>
-                <CoinImg src={theCoins.image || <BsCurrencyBitcoin />} />{theCoins.market_cap_rank} <Div> <DivName> {theCoins.name}{" - "}{theCoins.symbol.toUpperCase()}</DivName></Div> <Div>${theCoins.current_price} </Div> <Div>{theCoins.price_change_percentage_24h.toFixed(3) < 0 ? (<Span className="red"> {theCoins.price_change_percentage_24h.toFixed(3)}% </Span>) : (<Span className="green"> {theCoins.price_change_percentage_24h.toFixed(3)}% </Span>)} </Div> <Div> ${theCoins.low_24h}</Div>{"  "}<Div> ${theCoins.total_volume.toLocaleString()}</Div>
+                <CoinImg src={theCoins.image} />{theCoins.market_cap_rank} <Div> <DivName> {theCoins.name}{" - "}{theCoins.symbol.toUpperCase()}</DivName></Div> <Div>${theCoins.current_price} </Div> <Div>{theCoins.price_change_percentage_24h.toFixed(3) < 0 ? (<Span className="red"> {theCoins.price_change_percentage_24h.toFixed(3)}% </Span>) : (<Span className="green"> {theCoins.price_change_percentage_24h.toFixed(3)}% </Span>)} </Div> <Div> ${theCoins.low_24h}</Div>{"  "}<Div> ${theCoins.total_volume.toLocaleString()}</Div>
               </CoinLayout>
               <Hr />
             </div>

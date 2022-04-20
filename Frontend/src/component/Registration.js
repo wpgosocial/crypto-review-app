@@ -24,7 +24,7 @@ const Registration = ({ }) => {
       .then(res => res.json())
       .then((data) => {
         setIsRgistered(data.data)
-        navigate(`/profile`)
+        navigate(`/signin`)
       })
       .catch((err) => { console.log(err) })
   }

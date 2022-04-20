@@ -11,7 +11,7 @@ const CoinListProvider = ({ children }) => {
   const [TVL,setTVL] = useState([]);
 
   const CoinFunction1 = () => {
-    axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=160&page=1&sparkline=false")
+    axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=240&page=1&sparkline=false")
       .then(res => {
         setOnCoinList1(res.data);
       })

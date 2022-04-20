@@ -6,12 +6,12 @@ const Taders = () => {
 
 
 
-  console.log("T********************************", )
+  // console.log("T********************************", )
 
   return (
     <>
-      <div>Taders</div>
-      
+      <div>Tading Data</div><br /><br />
+      <h2>Coming Soon ... !</h2>
 
     </>
   )
