@@ -13,6 +13,7 @@ const Footer = () => {
             <Section2>
                 <Title>Support</Title><br/>
                 <p>FAQ</p>
+                
                 <p>Contact Support</p><br/>
             </Section2>
             <Section3>
