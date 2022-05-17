@@ -63,7 +63,7 @@ const CoinDetails = () => {
 
             <hr />
             {/* +++++++++++++++++++++++++ header & banner +++++++++++++++++++++++++++ */}
-
+<div>
             <ReviewDiv>
             <ReviewBox
                 coinid={coinid}
@@ -82,7 +82,7 @@ const CoinDetails = () => {
             })}
             </ReviewDiv>
 
-
+</div>
         </>
     )
 }
